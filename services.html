@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services &amp; Pricing — Painted Pony Salon, Pinedale WY</title>
+<meta name="description" content="The Painted Pony Salon service menu: precision cuts, lived-in color, bridal and occasion styling, blowouts. Sample pricing for the design proposal.">
+<meta property="og:title" content="Services — Painted Pony Salon">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<style>
+.acc{ border-top:1px solid var(--line); }
+.acc-item{ border-bottom:1px solid var(--line); }
+.acc-btn{
+  width:100%; display:flex; align-items:baseline; gap:1.25rem; text-align:left;
+  background:none; border:0; padding:1.75rem .5rem; cursor:pointer; font:inherit; color:inherit;
+}
+.acc-btn .num{ font-family:var(--mono); font-size:.8125rem; color:var(--accent); letter-spacing:.1em; flex:none; }
+.acc-btn .t{ font-family:var(--serif); font-size:clamp(1.375rem,3vw,2rem); color:var(--ink); font-weight:500; flex:1; }
+.acc-btn .pm{ font-family:var(--serif); font-size:1.5rem; color:var(--accent); flex:none; transition:transform .25s var(--ease); }
+.acc-item.open .pm{ transform:rotate(45deg); }
+.acc-panel{ padding:0 .5rem 2rem 3.4rem; }
+.menu{ list-style:none; margin:0; padding:0; }
+.menu li{
+  display:grid; grid-template-columns:1fr auto; gap:.25rem 1.5rem;
+  padding:1.1rem 0; border-bottom:1px dashed var(--line);
+}
+.menu li:last-child{ border-bottom:0; }
+.menu .mn{ font-weight:600; color:var(--ink); }
+.menu .md{ grid-column:1; font-size:.9375rem; color:var(--muted); max-width:46ch; }
+.menu .mp{ font-family:var(--mono); font-size:.9375rem; color:var(--ink); white-space:nowrap; }
+@media (max-width:720px){ .acc-panel{ padding-left:.5rem; } }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Painted Pony Salon — home">
+      <span class="word">Painted <em>Pony</em></span>
+      <span class="sub">SALON · PINEDALE WY</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="visit.html">Visit</a>
+      <a href="visit.html#book" class="btn btn-primary btn-sm">Book a chair</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow rv">The menu</p>
+      <h1 class="display rv d1" style="margin:1.1rem 0 1.25rem;max-width:12ch">Services &amp; <em>pricing.</em></h1>
+      <p class="lede rv d2">Everything starts with a consultation. Prices below are <strong>samples for this design proposal</strong> — the real menu is confirmed at booking.</p>
+      <p class="rv d3" style="margin-top:1rem"><span class="sample" style="margin-left:0">All prices sample</span></p>
+    </div>
+  </section>
+
+  <section style="padding-top:3rem">
+    <div class="wrap">
+      <div class="acc rv">
+
+        <div class="acc-item open" data-acc id="cuts">
+          <button class="acc-btn" data-acc-btn aria-expanded="true">
+            <span class="num">01</span><span class="t">Precision Cuts</span><span class="pm" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel" data-acc-panel>
+            <ul class="menu">
+              <li><span class="mn">Signature Cut</span><span class="mp">from $55</span><span class="md">Consultation, precision cut, wash, and style. Designed around your hair's natural fall.</span></li>
+              <li><span class="mn">Cut + Mini Color Refresh</span><span class="mp">from $85</span><span class="md">Signature cut with a gloss or toner refresh to revive existing color.</span></li>
+              <li><span class="mn">Kids' Cut (12 &amp; under)</span><span class="mp">from $30</span><span class="md">Patient, no-rush cuts for young clients.</span></li>
+              <li><span class="mn">Bang / Neckline Trim</span><span class="mp">$15</span><span class="md">A tidy-up between full appointments.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item" data-acc id="color">
+          <button class="acc-btn" data-acc-btn aria-expanded="false">
+            <span class="num">02</span><span class="t">Lived-in Color</span><span class="pm" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel" data-acc-panel hidden>
+            <ul class="menu">
+              <li><span class="mn">Signature Balayage</span><span class="mp">from $165</span><span class="md">Hand-painted lightness with a soft, grow-out-friendly finish. Includes toner and style.</span></li>
+              <li><span class="mn">Root Melt + Gloss</span><span class="mp">from $95</span><span class="md">Seamless root blend with dimensional gloss — the low-maintenance color.</span></li>
+              <li><span class="mn">Full Foil / Dimensional Color</span><span class="mp">from $140</span><span class="md">Classic foiling for brightness and dimension, finished with toner.</span></li>
+              <li><span class="mn">Gloss / Toner Refresh</span><span class="mp">from $45</span><span class="md">Shine and tone revival between color appointments.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item" data-acc id="occasion">
+          <button class="acc-btn" data-acc-btn aria-expanded="false">
+            <span class="num">03</span><span class="t">Bridal &amp; Occasion</span><span class="pm" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel" data-acc-panel hidden>
+            <ul class="menu">
+              <li><span class="mn">Bridal Trial</span><span class="mp">from $75</span><span class="md">A full rehearsal of your wedding-day style, with photos for the big day.</span></li>
+              <li><span class="mn">Bridal Day Styling</span><span class="mp">from $120</span><span class="md">Updo or down-style that holds through the last dance.</span></li>
+              <li><span class="mn">Occasion Styling</span><span class="mp">from $65</span><span class="md">Polished styling for photos, dances, and big nights out.</span></li>
+              <li><span class="mn">Bridesmaid / Guest Styling</span><span class="mp">from $55</span><span class="md">Cohesive looks for the whole party.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item" data-acc id="finish">
+          <button class="acc-btn" data-acc-btn aria-expanded="false">
+            <span class="num">04</span><span class="t">Blowouts &amp; Finishing</span><span class="pm" aria-hidden="true">+</span>
+          </button>
+          <div class="acc-panel" data-acc-panel hidden>
+            <ul class="menu">
+              <li><span class="mn">The Pony Blowout</span><span class="mp">from $45</span><span class="md">Wash, blow-dry, and polished finish. 45 minutes, out the door glowing.</span></li>
+              <li><span class="mn">Blowout + Treatment</span><span class="mp">from $70</span><span class="md">Deep-conditioning treatment under the dryer, then the full finish.</span></li>
+              <li><span class="mn">Event Touch-up</span><span class="mp">from $25</span><span class="md">Quick restyle before you head out.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-note rv">
+        <strong style="color:var(--ink)">Honest note:</strong> this is a concept menu for the website proposal. Real services, prices, and availability are confirmed when you book — nothing here is a promise until Chelsie confirms it.
+      </div>
+
+      <div class="rv" style="margin-top:2.5rem;display:flex;gap:.9rem;flex-wrap:wrap">
+        <a href="visit.html#book" class="btn btn-primary">Book a chair</a>
+        <a href="gallery.html" class="btn btn-ghost">See the work</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="closing rv">
+        <p class="eyebrow center">Not sure what you need?</p>
+        <h2 class="h2">Take the 30-second<br>chair quiz.</h2>
+        <p>Three questions, one honest recommendation — matched to the sample menu above.</p>
+        <a href="index.html#finder" class="btn btn-light">Find your service</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <p class="word">Painted <em>Pony</em></p>
+        <p>A one-chair salon in Pinedale, Wyoming. Good hair, honest chair — by Chelsie Martin.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Hours &amp; location</a>
+        <a href="visit.html#book">Book a chair</a>
+      </div>
+      <div class="foot-col">
+        <h4>Salon</h4>
+        <a href="about.html">About Chelsie</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> <span data-biz="name">Painted Pony Salon</span>, Pinedale WY. Concept proposal — services, prices &amp; hours shown are samples.</span>
+      <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

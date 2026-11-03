@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — Painted Pony Salon, Pinedale WY</title>
+<meta name="description" content="Hair work from the chair at Painted Pony Salon, Pinedale WY: balayage, precision cuts, bridal updos, and curls.">
+<meta property="og:title" content="Gallery — Painted Pony Salon">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<style>
+.filters{ display:flex; flex-wrap:wrap; gap:.6rem; margin:2rem 0 2.5rem; }
+.filter-btn{
+  font-family:var(--mono); font-size:.75rem; letter-spacing:.14em; text-transform:uppercase;
+  border:1px solid var(--line); background:transparent; color:var(--muted);
+  border-radius:999px; padding:.6rem 1.2rem; cursor:pointer; min-height:2.75rem;
+  transition:border-color .2s, color .2s, background .2s;
+}
+.filter-btn:hover{ border-color:var(--ink); color:var(--ink); }
+.filter-btn.active{ background:var(--ink); border-color:var(--ink); color:var(--dark-ink); }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Painted Pony Salon — home">
+      <span class="word">Painted <em>Pony</em></span>
+      <span class="sub">SALON · PINEDALE WY</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button>
+    <nav class="nav" id="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="visit.html">Visit</a>
+      <a href="visit.html#book" class="btn btn-primary btn-sm">Book a chair</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow rv">The work</p>
+      <h1 class="display rv d1" style="margin:1.1rem 0 1.25rem;max-width:12ch">Recent from<br><em>the chair.</em></h1>
+      <p class="lede rv d2">A rotating look at what's leaving the salon lately. <strong style="color:var(--ink)">These are concept images for the design proposal</strong> — the real portfolio would be Chelsie's own client work, with permission.</p>
+      <div class="filters rv d3" role="group" aria-label="Filter gallery">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="cut" aria-pressed="false">Cuts</button>
+        <button class="filter-btn" data-filter="color" aria-pressed="false">Color</button>
+        <button class="filter-btn" data-filter="occasion" aria-pressed="false">Occasion</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:2rem">
+    <div class="wrap">
+      <div class="g-grid rv">
+        <figure class="g-item g-a" data-cat="color" style="margin:0">
+          <img src="assets/img/gallery-balayage.jpg" alt="Long hair with soft caramel balayage, back view" width="1920" height="1280" loading="lazy">
+          <figcaption><span class="tag">Color · concept</span>Lived-in balayage</figcaption>
+        </figure>
+        <figure class="g-item g-b" data-cat="cut" style="margin:0">
+          <img src="assets/img/gallery-bob.jpg" alt="Sleek precision bob haircut, side profile" width="1280" height="1920" loading="lazy">
+          <figcaption><span class="tag">Cut · concept</span>Precision bob</figcaption>
+        </figure>
+        <figure class="g-item g-c" data-cat="occasion" style="margin:0">
+          <img src="assets/img/gallery-updo.jpg" alt="Elegant bridal updo hairstyle, back view" width="1280" height="1920" loading="lazy">
+          <figcaption><span class="tag">Occasion · concept</span>Bridal updo</figcaption>
+        </figure>
+        <figure class="g-item g-d" data-cat="cut" style="margin:0">
+          <img src="assets/img/gallery-curls.jpg" alt="Natural voluminous curly hair texture in warm light" width="1920" height="1280" loading="lazy">
+          <figcaption><span class="tag">Cut · concept</span>Curl shaping</figcaption>
+        </figure>
+      </div>
+      <div class="form-note rv">
+        <strong style="color:var(--ink)">Honest note:</strong> every image on this page is AI-generated concept imagery for the proposal — labeled "concept" above each caption. A live site would show Chelsie's real client work here.
+      </div>
+      <div class="rv" style="margin-top:2.5rem">
+        <a href="visit.html#book" class="btn btn-primary">Book your transformation</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="closing rv">
+        <p class="eyebrow center">Like what you see?</p>
+        <h2 class="h2">Imagine it<br>on you.</h2>
+        <p>Bring a photo to your consultation — we'll talk honestly about what your hair can do.</p>
+        <a href="visit.html#book" class="btn btn-light">Book a consultation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <p class="word">Painted <em>Pony</em></p>
+        <p>A one-chair salon in Pinedale, Wyoming. Good hair, honest chair — by Chelsie Martin.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Hours &amp; location</a>
+        <a href="visit.html#book">Book a chair</a>
+      </div>
+      <div class="foot-col">
+        <h4>Salon</h4>
+        <a href="about.html">About Chelsie</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> <span data-biz="name">Painted Pony Salon</span>, Pinedale WY. Concept proposal — services, prices &amp; hours shown are samples.</span>
+      <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
